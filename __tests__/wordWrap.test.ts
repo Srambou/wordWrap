@@ -10,4 +10,10 @@ describe("wordWrap", () =>{
     it("should retun 'x\nx' when paragraph is 'xx' and column number is 1", () =>{
         expect(wrapWord('xx',1)).toEqual('x\nx');
     })
+    it("should retun 'x\nx' when paragraph is 'xx' and column number is 1", () =>{
+        expect(wrapWord('xx',1)).toEqual('x\nx');
+    })
+    it("should retun 'x\nx\nx' when paragraph is 'xxx' and column number is 1", () =>{
+        expect(wrapWord('xxx',1)).toEqual('x\nx\nx');
+    })
 })
