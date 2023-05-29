@@ -7,4 +7,7 @@ describe("wordWrap", () =>{
     it("should retun 'x' when paragraph is 'x' and column number is 1", () =>{
         expect(wrapWord('x',1)).toEqual('x');
     })
+    it("should retun 'x\nx' when paragraph is 'xx' and column number is 1", () =>{
+        expect(wrapWord('x\nx',1)).toEqual('xx');
+    })
 })
