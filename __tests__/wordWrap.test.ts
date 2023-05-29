@@ -8,6 +8,6 @@ describe("wordWrap", () =>{
         expect(wrapWord('x',1)).toEqual('x');
     })
     it("should retun 'x\nx' when paragraph is 'xx' and column number is 1", () =>{
-        expect(wrapWord('x\nx',1)).toEqual('xx');
+        expect(wrapWord('xx',1)).toEqual('x\nx');
     })
 })
