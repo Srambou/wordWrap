@@ -19,4 +19,7 @@ describe("wordWrap", () => {
     it("should retun 'jean\nluc' when paragraph is 'jean luc' and column number is 4", () => {
         expect(wrapWord('jean luc', 4)).toEqual('jean\nluc');
     });
+    it("should retun 'jean\nluc' when paragraph is 'jean luc' and column number is 5", () => {
+        expect(wrapWord('jean luc', 5)).toEqual('jean\nluc');
+    });
 });
